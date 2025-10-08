@@ -1,0 +1,130 @@
+/* General Navbar */
+
+/* General Navbar */
+.navbar {
+  width: 100%;
+  background: #2c3e50;
+  color: white;
+  padding: 12px 20px;
+  position: fixed; /* change from sticky to fixed */
+  top: 0;
+  left: 0;
+  z-index: 1000;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.15);
+}
+
+.nav-container {
+  max-width: 1200px;
+  margin: auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+/* Left Section */
+.nav-left {
+  display: flex;
+  align-items: center;
+  gap: 30px;
+}
+
+.nav-logo h2 {
+  font-size: 20px;
+  margin: 0;
+  color: #ecf0f1;
+  white-space: nowrap;
+}
+
+.nav-features {
+  display: flex;
+  gap: 25px; /* spacing between links */
+  align-items: center;
+  pointer-events: auto;
+}
+
+.nav-item {
+  display: flex;
+  align-items: center;
+  pointer-events: auto;
+}
+
+.nav-link {
+  text-decoration: none;
+  color: white;
+  font-weight: 500;
+  padding: 8px 12px;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: background 0.3s ease, color 0.3s ease;
+}
+
+.nav-link:hover {
+  background: rgba(255, 255, 255, 0.1);
+  color: #00d1ff;
+}
+
+/* Right Section */
+.nav-right {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  margin-left: auto;
+  gap: 30px; /* more gap between last link and profile */
+}
+
+/* Hamburger */
+.nav-toggle {
+  display: none;
+  flex-direction: column;
+  cursor: pointer;
+  gap: 6px;
+}
+
+.bar {
+  height: 3px;
+  width: 25px;
+  background: white;
+  border-radius: 5px;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .nav-features {
+    position: absolute;
+    top: 60px;
+    left: -100%;
+    width: 100%;
+    flex-direction: column;
+    background: #34495e;
+    padding: 20px 0;
+    gap: 15px;
+    transition: left 0.3s ease;
+    z-index: 1001;
+  }
+
+  .nav-features.active {
+    left: 0;
+  }
+
+  .nav-right {
+    position: absolute;
+    top: calc(60px + var(--nav-features-height, 250px));
+    left: -100%;
+    width: 100%;
+    flex-direction: column;
+    gap: 15px;
+    background: #2c3e50;
+    padding: 15px 0;
+    transition: left 0.3s ease;
+  }
+
+  .nav-toggle {
+    display: flex;
+  }
+
+  .nav-link {
+    width: 200px;
+    text-align: center;
+    justify-content: center;
+  }
+}

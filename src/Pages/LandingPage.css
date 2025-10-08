@@ -1,0 +1,88 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    height: 100vh;
+    font-family: Arial, sans-serif;
+    color: white;
+    background: url('/city.jpg') no-repeat center center/cover;
+}
+
+
+.nav {
+    background-color: rgba(0, 0, 0, 0.7);
+    height: 50px;
+    padding-left: 1250px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 1000;
+}
+
+.nav ul {
+    display: flex;
+    gap: 30px;
+    list-style: none;
+}
+
+.nav ul li a {
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+    font-size: 16px;
+    transition: color 0.3s ease;
+}
+
+.nav ul li a:hover {
+    color: #cbd1d2;
+    width: 30px;
+}
+
+/* Content Box */
+.content {
+    position: absolute;
+    bottom: 40px;
+    left: 40px;
+    max-width: 550px;
+    padding: 25px;
+    border-radius: 15px;
+    background: rgba(4, 4, 4, 0.55);
+    backdrop-filter: blur(6px);
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.4);
+    color: aliceblue;
+}
+
+.content h1 {
+    margin-bottom: 10px;
+    font-size: 28px;
+    color: #ccd9dc;
+}
+
+.content p {
+    font-size: 16px;
+    line-height: 1.5;
+    white-space: pre-line;
+}
+
+/* Cursor effect */
+.cursor {
+    display: inline-block;
+    width: 2px;
+    height: 20px;
+    background: white;
+    margin-left: 3px;
+    animation: blink 0.7s infinite;
+}
+
+@keyframes blink {
+    50% {
+        opacity: 0;
+    }
+}

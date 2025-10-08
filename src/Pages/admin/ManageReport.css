@@ -1,0 +1,90 @@
+.manage-reports {
+  background: #f4f6f9;
+  min-height: 100vh;
+}
+
+.reports-container {
+  max-width: 1100px;
+  margin: 40px auto;
+  padding: 25px;
+  background: white;
+  border-radius: 14px;
+  box-shadow: 0 6px 14px rgba(0, 0, 0, 0.1);
+}
+
+.reports-container h1 {
+  font-size: 28px;
+  margin-bottom: 8px;
+  text-align: center;
+}
+
+.reports-container p {
+  text-align: center;
+  margin-bottom: 20px;
+  color: #666;
+}
+
+/* Search */
+.reports-search {
+  margin-bottom: 20px;
+  text-align: right;
+}
+
+.reports-search input {
+  padding: 10px 14px;
+  border-radius: 6px;
+  border: 1px solid #ccc;
+  width: 260px;
+}
+
+/* Table */
+.reports-table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.reports-table th,
+.reports-table td {
+  padding: 12px;
+  border-bottom: 1px solid #ddd;
+  text-align: center;
+}
+
+.reports-table th {
+  background: #0077cc;
+  color: white;
+  font-size: 15px;
+}
+
+.reports-table tr:hover {
+  background: #f1f7ff;
+  transition: 0.2s;
+}
+
+/* Status styling */
+.status {
+  padding: 6px 12px;
+  border-radius: 6px;
+  font-weight: bold;
+}
+
+.status.pending {
+  background: #fff3cd;
+  color: #856404;
+}
+
+.status.in-progress {
+  background: #cce5ff;
+  color: #004085;
+}
+
+.status.resolved {
+  background: #d4edda;
+  color: #155724;
+}
+
+select {
+  padding: 6px 10px;
+  border-radius: 6px;
+  border: 1px solid #ccc;
+}

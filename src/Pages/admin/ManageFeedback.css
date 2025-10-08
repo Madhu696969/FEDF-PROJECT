@@ -1,0 +1,91 @@
+.manage-feedback {
+  background: #f4f6f9;
+  min-height: 100vh;
+}
+
+.feedback-container {
+  max-width: 1100px;
+  margin: 40px auto;
+  padding: 25px;
+  background: white;
+  border-radius: 14px;
+  box-shadow: 0 6px 14px rgba(0, 0, 0, 0.1);
+}
+
+.feedback-container h1 {
+  font-size: 28px;
+  margin-bottom: 8px;
+  text-align: center;
+}
+
+.feedback-container p {
+  text-align: center;
+  margin-bottom: 20px;
+  color: #666;
+}
+
+/* Search */
+.feedback-search {
+  margin-bottom: 20px;
+  text-align: right;
+}
+
+.feedback-search input {
+  padding: 10px 14px;
+  border-radius: 6px;
+  border: 1px solid #ccc;
+  width: 260px;
+}
+
+/* Table */
+.feedback-table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.feedback-table th,
+.feedback-table td {
+  padding: 12px;
+  border-bottom: 1px solid #ddd;
+  text-align: center;
+}
+
+.feedback-table th {
+  background: #0077cc;
+  color: white;
+  font-size: 15px;
+}
+
+.feedback-table tr:hover {
+  background: #f1f7ff;
+  transition: 0.2s;
+}
+
+/* Stars */
+.stars {
+  font-size: 18px;
+  color: #ffb400;
+}
+
+/* Status styling */
+.status {
+  padding: 6px 12px;
+  border-radius: 6px;
+  font-weight: bold;
+}
+
+.status.new {
+  background: #ffeeba;
+  color: #856404;
+}
+
+.status.reviewed {
+  background: #d4edda;
+  color: #155724;
+}
+
+select {
+  padding: 6px 10px;
+  border-radius: 6px;
+  border: 1px solid #ccc;
+}

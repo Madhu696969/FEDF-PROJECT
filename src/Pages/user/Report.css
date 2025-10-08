@@ -1,0 +1,176 @@
+/* Background with animated gradient */
+.report-header {
+  text-align: center;
+  padding: 40px 20px;
+  color: white;
+  background: linear-gradient(270deg, #6c63ff, #74ebd5, #ff6f91);
+  background-size: 600% 600%;
+  animation: gradientShift 10s ease infinite;
+}
+
+.report-header h1 {
+  font-size: 2rem;
+  margin-bottom: 8px;
+  animation: fadeInDown 1s ease;
+}
+
+.report-header p {
+  font-size: 1.1rem;
+  opacity: 0.9;
+  animation: fadeIn 2s ease;
+}
+
+/* Gradient Animation */
+@keyframes gradientShift {
+  0% { background-position: 0% 50%; }
+  50% { background-position: 100% 50%; }
+  100% { background-position: 0% 50%; }
+}
+
+/* Page Layout */
+.report-page {
+  min-height: 100vh;
+  background: linear-gradient(135deg, #f0f4ff 0%, #e0f7fa 100%);
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  padding: 30px 20px;
+}
+
+/* Container */
+.report-container {
+  width: 90%;
+  max-width: 700px;
+  background: #ffffff;
+  padding: 30px;
+  border-radius: 20px;
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.15);
+  animation: fadeInUp 0.8s ease-in-out;
+}
+
+.report-title {
+  text-align: center;
+  font-size: 28px;
+  margin-bottom: 25px;
+  color: #2c3e50;
+  font-weight: 700;
+}
+
+/* About section */
+.about-report {
+  background: #f1f4ff;
+  padding: 15px 20px;
+  border-radius: 10px;
+  margin-bottom: 20px;
+  border-left: 6px solid #6c63ff;
+}
+
+/* Form */
+.report-form label {
+  display: block;
+  margin-bottom: 18px;
+  font-weight: 600;
+  color: #444;
+  animation: fadeIn 0.7s ease;
+}
+
+.report-form input,
+.report-form textarea,
+.report-form select {
+  width: 100%;
+  padding: 12px;
+  margin-top: 6px;
+  border: 2px solid #ddd;
+  border-radius: 10px;
+  background: #f9f9f9;
+  transition: all 0.3s ease;
+}
+
+.report-form input:focus,
+.report-form textarea:focus,
+.report-form select:focus {
+  border-color: #6c63ff;
+  background: #fff;
+  box-shadow: 0 0 8px rgba(108, 99, 255, 0.3);
+  outline: none;
+}
+
+/* Location row */
+.location-row {
+  display: flex;
+  gap: 8px;
+}
+
+.location-btn {
+  background: #6c63ff;
+  color: white;
+  border: none;
+  padding: 8px 12px;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.location-btn:hover {
+  background: #4a47a3;
+}
+
+/* Image Preview */
+.image-preview {
+  text-align: center;
+  margin-top: 10px;
+}
+
+.image-preview img {
+  max-width: 100%;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+  animation: fadeIn 1s ease;
+}
+
+/* Button */
+.submit-btn {
+  width: 100%;
+  background: linear-gradient(135deg, #6c63ff, #4a47a3);
+  color: white;
+  border: none;
+  padding: 14px;
+  border-radius: 12px;
+  cursor: pointer;
+  font-size: 16px;
+  font-weight: 600;
+  letter-spacing: 1px;
+  margin-top: 15px;
+  transition: all 0.3s ease;
+}
+
+.submit-btn:hover {
+  background: linear-gradient(135deg, #4a47a3, #6c63ff);
+  transform: scale(1.05);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+}
+
+/* Success Message */
+.success-message {
+  color: #28a745;
+  font-weight: bold;
+  margin-bottom: 15px;
+  text-align: center;
+  animation: fadeIn 0.8s ease-in-out;
+}
+
+/* Animations */
+@keyframes fadeInUp {
+  from { opacity: 0; transform: translateY(40px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+@keyframes fadeInDown {
+  from { opacity: 0; transform: translateY(-30px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}
