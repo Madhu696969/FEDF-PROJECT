@@ -1,0 +1,110 @@
+/* Navbar Container */
+.UserNav {
+  display: flex;
+  justify-content: space-between; /* space between logo and links */
+  align-items: center;
+  background: #2c3e50;
+  padding: 12px 30px;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+  border-radius: 8px;
+}
+
+/* Left side title/logo */
+.nav-left .nav-title {
+  color: #ecf0f1;
+  font-size: 1.4rem;
+  font-weight: 700;
+  margin: 0;
+  letter-spacing: 1px;
+}
+
+/* Right side links */
+.nav-right {
+  display: flex;
+  align-items: center;
+  gap: 35px; /* space between links and profile */
+}
+
+/* Links */
+.nav-links {
+  display: flex;
+  list-style: none;
+  gap: 30px; /* space between each link */
+  margin: 0;
+  padding: 0;
+}
+
+.nav-links li {
+  cursor: pointer;
+}
+
+.nav-links li a {
+  text-decoration: none;
+  color: #fff;
+  font-size: 1rem;
+  font-weight: 500;
+  transition: color 0.3s ease, transform 0.2s ease;
+}
+
+.nav-links li a:hover {
+  color: #1abc9c;
+  transform: translateY(-2px);
+}
+
+/* Logout styling - consistent with other nav items */
+#log {
+  color: #e74c3c;
+  font-weight: 500;
+  font-size: 1rem;
+  transition: color 0.3s ease, transform 0.2s ease;
+  cursor: pointer;
+}
+
+#log:hover {
+  color: #ff6b6b;
+  transform: translateY(-2px);
+}
+
+/* Profile Section */
+.profile-section {
+  display: flex;
+  align-items: center;
+}
+
+.profile-img {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  object-fit: cover;
+  cursor: pointer;
+  border: 2px solid #fff;
+  transition: transform 0.3s ease, border-color 0.3s ease;
+}
+
+.profile-img:hover {
+  transform: scale(1.1);
+  border-color: #1abc9c;
+}
+
+/* Responsive design */
+@media (max-width: 768px) {
+  .UserNav {
+    padding: 10px 15px;
+    flex-direction: column;
+    gap: 15px;
+  }
+  
+  .nav-right {
+    gap: 20px;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  
+  .nav-links {
+    gap: 15px;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+}

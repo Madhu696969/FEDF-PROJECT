@@ -1,0 +1,97 @@
+.monitor-infra {
+  background: #f4f6f9;
+  min-height: 100vh;
+}
+
+.infra-container {
+  max-width: 1100px;
+  margin: 40px auto;
+  padding: 25px;
+  background: white;
+  border-radius: 14px;
+  box-shadow: 0 6px 14px rgba(0, 0, 0, 0.1);
+}
+
+.infra-container h1 {
+  font-size: 28px;
+  margin-bottom: 8px;
+  text-align: center;
+}
+
+.infra-container p {
+  text-align: center;
+  margin-bottom: 20px;
+  color: #666;
+}
+
+/* Stat Cards */
+.infra-stats {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 20px;
+  margin-bottom: 30px;
+}
+
+/* Search */
+.infra-search {
+  margin-bottom: 20px;
+  text-align: right;
+}
+
+.infra-search input {
+  padding: 10px 14px;
+  border-radius: 6px;
+  border: 1px solid #ccc;
+  width: 250px;
+}
+
+/* Table */
+.infra-table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.infra-table th,
+.infra-table td {
+  padding: 12px;
+  border-bottom: 1px solid #ddd;
+  text-align: center;
+}
+
+.infra-table th {
+  background: #0077cc;
+  color: white;
+  font-size: 15px;
+}
+
+.infra-table tr:hover {
+  background: #f1f7ff;
+  transition: 0.2s;
+}
+
+.status {
+  padding: 6px 12px;
+  border-radius: 6px;
+  font-weight: bold;
+}
+
+.status.healthy {
+  background: #d4edda;
+  color: #155724;
+}
+
+.status.warning {
+  background: #fff3cd;
+  color: #856404;
+}
+
+.status.critical {
+  background: #f8d7da;
+  color: #721c24;
+}
+
+select {
+  padding: 6px 10px;
+  border-radius: 6px;
+  border: 1px solid #ccc;
+}
